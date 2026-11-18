@@ -157,6 +157,6 @@ Status column: release = built in, beta/alpha = from the add-ons in §1.
 - MFA for admin interfaces (3.3.1)
 - Logout and session invalidation, "end all sessions", token expiry ≤ 24 h (2.2.x)
 - TLS 1.2+ and valid certificates (4.1.x): use Qualys SSL Labs
-- Dependency vulnerability scan (6.1.1): OWASP Dependency-Check, `pnpm audit`
+- Dependency vulnerability scan (6.1.1): OWASP Dependency-Check, `npm audit`
 - No secrets or credentials in logs or source (6.5.1, 6.7.1)
 - Webhook requirements (7.x), if you have webhooks

@@ -13,7 +13,7 @@ export default defineConfig({
       '/api': 'http://localhost:8088',
     },
   },
-  // Serves the production build (dist/) via `pnpm preview` on the same URL as dev.
+  // Serves the production build (dist/) via `npm run preview` on the same URL as dev.
   preview: {
     port: 5173,
     strictPort: true,

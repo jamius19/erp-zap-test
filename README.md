@@ -8,10 +8,10 @@ API contract: [docs/API_CONTRACT.md](docs/API_CONTRACT.md).
 ```powershell
 docker compose up -d                 # Postgres, data in ./database
 cd backend; ./gradlew bootRun        # http://localhost:8088 (seeds demo data on first start)
-cd frontend; pnpm install; pnpm build; pnpm preview  # production build on http://localhost:5173 (proxies /api -> 8088)
+cd frontend; npm install; npm run build; npm run preview  # production build on http://localhost:5173 (proxies /api -> 8088)
 ```
 
-For UI development with hot reload use `pnpm dev` instead of `build` + `preview` (same URL).
+For UI development with hot reload use `npm run dev` instead of `build` + `preview` (same URL).
 
 ## Logins (seed data)
 
@@ -27,7 +27,7 @@ teacher1 owns "Grade 5 - A" (student1-4), teacher2 "Grade 5 - B" (student5-8), t
 
 ```powershell
 cd backend; ./gradlew test    # needs Docker (Testcontainers)
-cd frontend; pnpm test
+cd frontend; npm test
 ```
 
 ## ZAP pointers
